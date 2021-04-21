@@ -93,6 +93,7 @@ public class Model {
 			parola = parola.toUpperCase();
 			if(parola.length()>1) {
 				if(this.trovaParola(parola)!=null) {
+					
 					tutte.add(parola);
 				}
 			}

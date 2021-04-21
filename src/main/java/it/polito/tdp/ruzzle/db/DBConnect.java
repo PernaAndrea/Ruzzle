@@ -11,6 +11,7 @@ public class DBConnect {
 	private static HikariDataSource ds;
 	
 	public static Connection getConnection() {
+		
 		if(ds == null) {
 			HikariConfig config = new HikariConfig();
 			config.setJdbcUrl(jdbcURL);
