@@ -1,0 +1,31 @@
+
+TRACCIA SOLUZIONE 
+
+Problema :   	
+			(input) 	
+					Stringa da riconoscere ( parola )
+					Contenuto della Board
+					Posizione della lettera iniziale
+	
+	Soluzione Parziale : parte iniziale della parola , la parte che ho gia riconosciuto .
+			(utile tenere elenco delle posizioni in cui si trovano le lettere gia riconosciute)
+			
+	Soluzione Totale : la parola completamente riconosciuta .
+			(utile tenere elenco delle posizioni in cui si trovano le lettere gia riconosciute nella parola completa)
+	
+	Livello della Ricorsione : possiamo per esempio usare il numero dei caratteri della parola gia riconosciuta .
+	
+	Condizioni di Terminazione : 	- Mi fermo quando il livello è uguale alla lunghezza della parola 
+									- Se viene trovata la soluzione potri interrompere subito la ricerca ( non rifaccio backTracking )
+									
+	Avvio della Ricorsione : 	- parto dal livello 1 perche cerco gia la prima lettera dentro la mia griglia  (se c e ovviamente ) 
+	
+	Strutture dati che ci servono : 	- Stringa da riconoscere " parola "
+										- Liverro ( intero ) 
+										- Lista di Pos ( per tenere traccia delle lettere fatte ) List<Pos>
+
+SOLUZIONE BRUTTA - DATA UNA PAROLA VEDO SE è PRESENTE NELLA GRIGLIA MIA
+(il passo ricorsivo sta nel vedere se la parola è presente o meno )
+
+APPROCCIO PIU CARINO - PROVO TUTTI I POSSIBILI PERCORSI NELLA GRIGLIA RUZZLE
+(il passo ricorsivo sta nel guardare proprio questo per ogni cella)

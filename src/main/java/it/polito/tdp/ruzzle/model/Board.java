@@ -15,8 +15,8 @@ import javafx.beans.property.StringProperty;
  */
 public class Board {
 	private List<Pos> positions;
-	private Map<Pos, StringProperty> cells;
-
+	private Map<Pos, StringProperty> cells; // MOLTO UTILE ASSOCIA LA CASELLA ALLA STRINGA CONTENENTE LA LETTERA!!!!
+//nel fxml controller ho l associazione del bottone e la string a corrispondente della string property
 	private int size;
 
 	/**
